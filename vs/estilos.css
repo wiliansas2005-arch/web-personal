@@ -1,0 +1,290 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #3d74ac;
+    color: #334155;
+    line-height: 1.8;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+
+
+.encabezado {
+    background: linear-gradient(135deg, #0F172A, #172554);
+    padding: 22px 8%;
+    border-bottom: 2px solid #38BDF8;
+    box-shadow: 0 4px 20px #0F172A20;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #176bbe;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #38BDF8;
+    transform: translateY(-2px);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 85px 10%;
+    background: linear-gradient(135deg, #367caa, #F8FAFC, #1575b6);
+}
+
+.hero-contenido {
+    flex: 1;
+}
+
+.etiqueta {
+    color: #0284C7;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #0F172A;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 18px 0;
+}
+
+.hero-contenido p {
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.hero img {
+    width: 45%;
+    max-width: 420px;
+    min-width: 200px;
+    border-radius: 22px;
+    border: 3px solid #216b96;
+    box-shadow: 0 15px 35px #1D4ED830;
+    object-fit: cover;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.hero img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 18px 40px #0284C740;
+}
+
+
+.boton {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #0284C7, #2563EB);
+    color: #5ecfad;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    box-shadow: 0 6px 18px #2563EB35;
+    transition: background 0.3s, transform 0.3s,
+                box-shadow 0.3s;
+}
+
+.boton:hover {
+    background: linear-gradient(135deg, #0369A1, #1D4ED8);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px #2563EB50;
+}
+
+
+.seccion {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #1D4ED8;
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+}
+
+#sobre-mi {
+    background-color: #8fb8d3;
+}
+
+#sobre-mi p {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #475569;
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+.intereses {
+    background: linear-gradient(135deg, #DBEAFE, #EFF6FF);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 35px;
+}
+
+.tarjeta {
+    padding: 32px 24px;
+    background: #5dcbdf;
+    border: 1px solid #a0edf0;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #1E40AF10;
+    transition: transform 0.3s, box-shadow 0.3s,
+                border-color 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    border-color: #60A5FA;
+    box-shadow: 0 15px 35px #2563EB25;
+}
+
+.emoji {
+    display: inline-block;
+    font-size: 3rem;
+    margin-bottom: 8px;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover .emoji {
+    transform: scale(1.12);
+}
+
+.tarjeta h3 {
+    color: #1D4ED8;
+    font-size: 21px;
+    font-weight: 750;
+    margin: 12px 0;
+}
+
+.tarjeta p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+.contacto {
+    background: #67acc7;
+    border-top: 1px solid #afc0d6;
+}
+
+.contacto h2 {
+    color: #1D4ED8;
+}
+
+.contacto p {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.correo {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0284C7;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+
+footer {
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #455885, #5c6a99);
+    color: #0e1013;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #107caa;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 700px) {
+    .encabezado {
+        padding: 18px 5%;
+    }
+
+    nav {
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-contenido p {
+        font-size: 16px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+    }
+
+    .seccion {
+        padding: 50px 7%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .tarjeta {
+        padding: 28px 22px;
+    }
+}
